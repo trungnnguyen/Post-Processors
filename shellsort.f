@@ -9,7 +9,8 @@ c     the order of its 'ascending' value                               c
       integer n, i, j, incr, itemp, ind(n)
       real*8 x(n), temp
 
-cf2py intent(in,out) x, n, ind
+cf2py intent(in) x, n
+cf2py intent(out) x, ind
       itemp = -1000             ! yj
       incr = 1
 c     Loop : calculate the increment
